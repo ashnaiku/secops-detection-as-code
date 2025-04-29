@@ -1,0 +1,1 @@
+# secops-detection-as-code
