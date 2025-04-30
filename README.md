@@ -34,7 +34,17 @@ source ENV_NAME/bin/activate
 ```bash
 ENV_NAME\Scripts\activate
 ```
+#### Step 1: Upload YARA-L rules to SecOps
 
+   You will need a `<BACKSTORY_CREDENTIALS_FILE>` to run this script. This file can be obtained from the Malachite project.
+
+   **Compare local rules with SecOps rules (dry run):**
+
+   ```bash
+   python3 uploadrules.py -c <BACKSTORY_CREDENTIALS_FILE>
+   ```
+
+   This command compares the local YARA-L rules with the rules already existing in your SecOps instance. It **does not** upload any files. It is recommended to run this command before actually uploading the rules to identify any potential conflicts or issues.
 Before you deploy the architecture, you will need at least the following
 information/configurations in place (for more precise configuration see the Variables section):
 
@@ -44,7 +54,7 @@ information/configurations in place (for more precise configuration see the Vari
 * Chronicle API Admin or equivalent to access SecOps APIs
 * Cloud Storage bucket for storing remote state file
 
-#### Step 2: Prepare the variables
+#### Step 2: Prepare the variables for Terraform
 
 Once you have the required information, head back to your cloned repository.
 Make sure you’re in the directory of this tutorial (where this README is in).
