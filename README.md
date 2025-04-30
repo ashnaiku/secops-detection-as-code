@@ -34,17 +34,23 @@ source ENV_NAME/bin/activate
 ```bash
 ENV_NAME\Scripts\activate
 ```
-#### Step 1: Upload YARA-L rules to SecOps
 
-   You will need a `<BACKSTORY_CREDENTIALS_FILE>` to run this script. This file can be obtained from the Malachite project.
-
-   **Compare local rules with SecOps rules (dry run):**
+4. **Install the required Python libraries:**
 
    ```bash
-   python3 uploadrules.py -c <BACKSTORY_CREDENTIALS_FILE>
+   pip install -r requirements.txt
+   ```
+## Usage
+
+1. **Copy YARA-L rules to a local folder:**
+
+   ```bash
+   python3 copy_rules2localfolder.py 
    ```
 
-   This command compares the local YARA-L rules with the rules already existing in your SecOps instance. It **does not** upload any files. It is recommended to run this command before actually uploading the rules to identify any potential conflicts or issues.
+   This script copies all YARA-L rule files from the [chronicle/detection-rules](https://github.com/chronicle/detection-rules.git) repository to a local folder named `localtmp`. This repository houses a collection of pre-built YARA rules.
+
+
 Before you deploy the architecture, you will need at least the following
 information/configurations in place (for more precise configuration see the Variables section):
 
