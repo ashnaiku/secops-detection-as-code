@@ -46,7 +46,7 @@ If you want to deploy from your Cloud Shell, click on [Cloud Shell] in GCP Conso
 Otherwise, in your console of choice:
 
 ```bash
-git clone https://github.com/GoogleCloudPlatform/cloud-foundation-fabric.git
+git clone [https://github.com/GoogleCloudPlatform/cloud-foundation-fabric.git](https://github.com/ashnaiku/secops-detection-as-code.git)
 ```
 
 Before you deploy the architecture, you will need at least the following
