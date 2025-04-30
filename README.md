@@ -66,13 +66,15 @@ information/configurations in place (for more precise configuration see the Vari
 Once you have the required information, head back to your cloned repository.
 Make sure you’re in the directory of this tutorial (where this README is in).
 
+#### Step 2 - Variables
 Configure the Terraform variables in your `terraform.tfvars` file.
 Rename the existing `terrafomr.tfvars.sample` as starting pointand then see the variables
 documentation below.
 
+#### Step 2 - Cloud Storage bucke
 For the pipeline to work properly it is mandatory to keep the terraform state in a remote location.
 We recommend a Cloud Storage bucket for storing the state file, we provided a sample backend.tf file
-named `backend.tf.sample` you can rename to backend.tf and replace the name of the Cloud Storage bucket where to store
+named `backend.tf.sample` you can rename to `backend.tf` and replace the name of the Cloud Storage bucket where to store
 state file. It is important for the accoung running the terraform script to have access to such a Cloud Storage bucket.
 
 #### Step 3: Deploy resources
