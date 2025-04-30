@@ -1,4 +1,3 @@
-# secops-detection-as-code
 
 # Detection as Code in Terraform for Google SecOps
 
@@ -9,37 +8,41 @@ this [medium article](https://medium.com/p/646de8967278).
 
 
 
-### Deployment
+## Prerequisites
 
-#### Step 0: Cloning the repository
+* Python 3.6 or later
 
-If you want to deploy from your Cloud Shell, click on [Cloud Shell] in GCP Console.
-Otherwise, in your console of choice:
+## Setup
 
-```bash
-git clone https://github.com/ashnaiku/secops-detection-as-code.git
-```
+1. **Clone the repository:**
 
-Create a Python virtual environment:
-```bash
-python -m venv ENV_NAME
-```
+   ```bash
+   git clone https://github.com/ashnaiku/upload_rules.git
+   ```
 
-Activate the virtual environment:
-# On Linux/macOS:
-```bash
-source ENV_NAME/bin/activate
-```
-# On Windows:
-```bash
-ENV_NAME\Scripts\activate
-```
+2. **Create a Python virtual environment:**
+
+   ```bash
+   python -m venv ENV_NAME
+   ```
+
+3. **Activate the virtual environment:**
+
+   ```bash
+   # On Linux/macOS:
+   source ENV_NAME/bin/activate
+
+   # On Windows:
+   ENV_NAME\Scripts\activate
+   ```
 
 4. **Install the required Python libraries:**
 
    ```bash
    pip install -r requirements.txt
    ```
+
+
 ## Usage
 
 1. **Copy YARA-L rules to a local folder:**
@@ -50,7 +53,7 @@ ENV_NAME\Scripts\activate
 
    This script copies all YARA-L rule files from the [chronicle/detection-rules](https://github.com/chronicle/detection-rules.git) repository to a local folder named `localtmp`. This repository houses a collection of pre-built YARA rules.
 
-
+#### Step 2: Prepare the variables for Terraform
 Before you deploy the architecture, you will need at least the following
 information/configurations in place (for more precise configuration see the Variables section):
 
@@ -59,8 +62,6 @@ information/configurations in place (for more precise configuration see the Vari
 * Region and customer code for the SecOps tenant
 * Chronicle API Admin or equivalent to access SecOps APIs
 * Cloud Storage bucket for storing remote state file
-
-#### Step 2: Prepare the variables for Terraform
 
 Once you have the required information, head back to your cloned repository.
 Make sure you’re in the directory of this tutorial (where this README is in).
