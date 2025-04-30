@@ -45,7 +45,7 @@ this [medium article](https://medium.com/p/646de8967278).
 
 ## Usage
 
-1. **Copy YARA-L rules to a local folder:**
+#### Step 1: Copy YARA-L rules to a local folder:
 
    ```bash
    python3 copy_rules2localfolder.py 
