@@ -81,28 +81,6 @@ terraform init
 terraform apply
 ```
 
-### GitLab CICD Configuration
-
-Please first set up Workload Identity Federation and then replace the following in the .gitlab-ci.yml:
-
-- SERVICE_ACCOUNT
-- WIF_PROVIDER
-- GITLAB_TOKEN audience
-
-according to the WIF configuration. The service account the pipeline will impersonate must have Chronicle API Admin role
-or equivalent custom role for dealing with SecOps Rule Management APIs. It is important to setup a remote backend (
-possibly on GCS) before adopting the pipeline (of course).
-
-### GitHub CICD Configuration
-
-Please first set up Workload Identity Federation and then replace the following in the .github/workflows/secops.yaml:
-
-- SERVICE_ACCOUNT
-- WIF_PROVIDER
-
-according to the WIF configuration. The service account the pipeline will impersonate must have Chronicle API Admin role
-or equivalent custom role for dealing with SecOps Rule Management APIs. It is important to setup a remote backend (
-possibly on GCS) before adopting the pipeline (of course).
 <!-- BEGIN TFDOC -->
 
 ## Variables
