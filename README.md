@@ -42,11 +42,7 @@ A brief workflow description:
 
 #### Step 0: Cloning the repository
 
-If you want to deploy from your Cloud Shell, click on the image below, sign in
-if required and when the prompt appears, click on “confirm”.
-
-[![Open Cloudshell](./images/cloud-shell-button.png)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2FGoogleCloudPlatform%2Fcloud-foundation-fabric&cloudshell_workspace=blueprints%2Fthird-party-solutions%2Fwordpress%2Fcloudrun)
-
+If you want to deploy from your Cloud Shell, click on [Cloud Shell] in GCP Console.
 Otherwise, in your console of choice:
 
 ```bash
