@@ -96,16 +96,6 @@ terraform init
 terraform apply
 ```
 
-<!-- BEGIN TFDOC -->
-
-## Variables
-
-| name                                      | description                                                            |                                                                                                      type                                                                                                      | required |                                                                                  default                                                                                   |
-|-------------------------------------------|------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [secops_tenant_config](variables.tf#L29)  | SecOps tenant configuration.                                           | <code title="object&#40;&#123;&#10;  location &#61; optional&#40;string, &#34;eu&#34;&#41;&#10;  instance &#61; string&#10;  project  &#61; string&#10;&#125;&#41;">object&#40;&#123;&#8230;&#125;&#41;</code> |    ✓     |                                                                                                                                                                            |
-| [secops_content_config](variables.tf#L17) | Path to SecOps rules and reference lists deployment YAML config files. |                             <code title="object&#40;&#123;&#10;  reference_lists &#61; string&#10;  rules &#61; string&#10;&#125;&#41;">object&#40;&#123;&#8230;&#125;&#41;</code>                             |          | <code title="&#123;&#10;  reference_lists &#61; &#34;secops_reference_lists.yaml&#34;&#10;  rules &#61; &#34;secops_rules.yaml&#34;&#10;&#125;">&#123;&#8230;&#125;</code> |
-
-<!-- END TFDOC -->
 
 ## Test
 
@@ -121,12 +111,3 @@ module "test" {
 # tftest modules=1 resources=2 files=rule,config
 ```
 
-
-```
-# tftest-file id=config path=secops_rules.yaml
-network_traffic_to_specific_country:
-  enabled: true
-  alerting: true
-  archived: false
-  run_frequency: "DAILY"
-```
