@@ -23,17 +23,17 @@ this [medium article](https://medium.com/p/646de8967278).
 2. **Create a Python virtual environment:**
 
    ```bash
-   python -m venv ENV_NAME
+   python -m venv <ENV_NAME>
    ```
 
 3. **Activate the virtual environment:**
 
    ```bash
    # On Linux/macOS:
-   source ENV_NAME/bin/activate
+   source <ENV_NAME>/bin/activate
 
    # On Windows:
-   ENV_NAME\Scripts\activate
+   <ENV_NAME>\Scripts\activate
    ```
 
 4. **Install the required Python libraries:**
