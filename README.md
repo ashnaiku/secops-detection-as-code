@@ -61,9 +61,10 @@ this [medium article](https://medium.com/p/646de8967278).
 Before you deploy the architecture, you will need at least the following
 information/configurations in place (for more precise configuration see the Variables section):
 
-* A SecOps tenant deployed with BYOP
-* The SecOps project ID
-* Region and customer code for the SecOps tenant
+* Region and customer code for the SecOps instance
+* Customer ID of SecOps instance (deployed with BYOP) 
+* The SecOps BYOP project ID
+  
 * Chronicle API Admin or equivalent to access SecOps APIs
 * Cloud Storage bucket for storing remote state file
 
