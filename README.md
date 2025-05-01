@@ -72,7 +72,7 @@ documentation below.
 
 
 ```bash
-   cp terraform.tfvars.sample terraform.tfvars
+   mv terraform.tfvars.sample terraform.tfvars
 ```
 
 #### Step 2b - Cloud Storage bucke
@@ -84,7 +84,7 @@ state file. It is important for the accoung running the terraform script to have
 * Cloud Storage bucket for storing remote state file
 
 ```bash
-   cp terraform.tfvars.sample terraform.tfvars
+   mv backend.tf.sample	backend.tf
 ```
   
 #### Step 3: Deploy resources
