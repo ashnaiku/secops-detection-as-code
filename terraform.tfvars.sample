@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-secops_config = {
+secops_tenant_config = {
   location = "eu"
   instance = "XXXXXX-XXX-XXXXXX"
   project  = "secops-project"
