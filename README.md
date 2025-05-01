@@ -48,7 +48,9 @@ this [medium article](https://medium.com/p/646de8967278).
 #### Step 1: Copy YARA-L rules to a local folder:
 
    ```bash
-   python3 copy_rules2localfolder.py 
+   python3 copy_rules2localfolder.py
+....
+Are you sure you want to delete empty folders in localtmp? (y/n): y
    ```
 
    This script copies all YARA-L rule files from the [chronicle/detection-rules](https://github.com/chronicle/detection-rules.git) repository to a local folder named `localtmp`. This repository houses a collection of pre-built YARA rules.
