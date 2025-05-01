@@ -59,22 +59,16 @@ this [medium article](https://medium.com/p/646de8967278).
 
 #### Step 2: Prepare the variables for Terraform
 Before you deploy the architecture, you will need at least the following
-information/configurations in place (for more precise configuration see the Variables section):
-
-* Region and customer code for the SecOps instance
-* Customer ID of SecOps instance (deployed with BYOP) 
-* The SecOps BYOP project ID
-  
-* Chronicle API Admin or equivalent to access SecOps APIs
-* Cloud Storage bucket for storing remote state file
-
-Once you have the required information, head back to your cloned repository.
-Make sure you’re in the directory of this tutorial (where this README is in).
+information/configurations in place :
 
 #### Step 2a - Variables
 Configure the Terraform variables in your `terraform.tfvars` file.
 Rename the existing `terrafomr.tfvars.sample` as starting pointand then see the variables
 documentation below.
+* Region and customer code for the SecOps instance
+* Customer ID of SecOps instance (deployed with BYOP) 
+* The SecOps BYOP project ID
+* Chronicle API Admin or equivalent to access SecOps APIs
 
 #### Step 2b - Cloud Storage bucke
 For the pipeline to work properly it is mandatory to keep the terraform state in a remote location.
@@ -82,6 +76,8 @@ We recommend a Cloud Storage bucket for storing the state file, we provided a sa
 named `backend.tf.sample` you can rename to `backend.tf` and replace the name of the Cloud Storage bucket where to store
 state file. It is important for the accoung running the terraform script to have access to such a Cloud Storage bucket.
 
+* Cloud Storage bucket for storing remote state file
+  
 #### Step 3: Deploy resources
 
 Initialize your Terraform environment and deploy the resources:
