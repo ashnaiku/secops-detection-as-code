@@ -17,7 +17,7 @@ this [medium article](https://medium.com/p/646de8967278).
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/ashnaiku/upload_rules.git
+   git clone https://github.com/ashnaiku/secops-detection-as-code.git
    ```
 
 2. **Create a Python virtual environment:**
