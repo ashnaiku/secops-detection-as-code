@@ -103,9 +103,9 @@ terraform apply
 module "test" {
   source        = "./fabric/blueprints/secops/detection-as-code"
   secops_config = {
-    location = "eu"
+    location = "us"
     instance = "XXXXXX-XXX-XXXXXX"
-    project  = "secops-project"
+    project  = "XXX-secops-project"
   }
 }
 # tftest modules=1 resources=2 files=rule,config
