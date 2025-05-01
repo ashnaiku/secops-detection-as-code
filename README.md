@@ -70,6 +70,11 @@ documentation below.
 * The SecOps BYOP project ID
 * Chronicle API Admin or equivalent to access SecOps APIs
 
+
+```bash
+   cp terraform.tfvars.sample terraform.tfvars
+```
+
 #### Step 2b - Cloud Storage bucke
 For the pipeline to work properly it is mandatory to keep the terraform state in a remote location.
 We recommend a Cloud Storage bucket for storing the state file, we provided a sample backend.tf file
@@ -77,6 +82,10 @@ named `backend.tf.sample` you can rename to `backend.tf` and replace the name of
 state file. It is important for the accoung running the terraform script to have access to such a Cloud Storage bucket.
 
 * Cloud Storage bucket for storing remote state file
+
+```bash
+   cp terraform.tfvars.sample terraform.tfvars
+```
   
 #### Step 3: Deploy resources
 
