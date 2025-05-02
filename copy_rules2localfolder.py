@@ -8,7 +8,7 @@ def clone_and_copy():
 
   # Define the source and destination directories
   repo_url = "https://github.com/chronicle/detection-rules"
-  local_dir = "localtmp"
+  local_dir = "rules"
 #TODO change to rules
   #TODO Add all rule names secops_rules.yaml 
   # Clone the repository
