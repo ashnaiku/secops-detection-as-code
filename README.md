@@ -50,12 +50,12 @@ this [medium article](https://medium.com/p/646de8967278).
    ```bash
    python3 copy_rules2localfolder.py
    ....
-   Are you sure you want to delete empty folders in localtmp? (y/n): y
+   Are you sure you want to delete empty folders in rules? (y/n): y
    ....
-   ls localtmp/
+   ls rules/
    ```
 
-   This script copies all YARA-L rule files from the [chronicle/detection-rules](https://github.com/chronicle/detection-rules.git) repository to a local folder named `localtmp`. This repository houses a collection of pre-built YARA rules.
+   This script copies all YARA-L rule files from the [chronicle/detection-rules](https://github.com/chronicle/detection-rules.git) repository to a local folder named `rules`. This repository houses a collection of pre-built YARA rules.
 
 #### Step 2: Prepare the variables for Terraform
 Before you deploy the architecture, you will need at least the following
