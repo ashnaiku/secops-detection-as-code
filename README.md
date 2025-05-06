@@ -94,6 +94,7 @@ Initialize your Terraform environment and deploy the resources:
 ```shell
 terraform init
 terraform apply
+terraform plan
 ```
 
 
